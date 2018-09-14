@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cultura_titulo">
+        <item>Museu de Arte Sacra do Pará</item>
+        <item>Espaço São José Liberto</item>
+        <item>Memorial dos Povos Indigenas</item>
+        <item>Corveta Solimões</item>
+        <item>Museu do Forte do Presepio</item>
+        <item>Casa das Onze Janelas</item>
+        <item>Museu de Arte de Belém</item>
+    </string-array>
+    <string-array name="cultura_descricao">
+        <item>O Museu de Arte Sacra é composto pela Igreja de Santo Alexandre e pelo antigo palácio episcopal (originalmente Colégio de Santo Alexandre).O acervo do Museu de Arte Sacra do Pará compõe-se por imaginárias datadas dos séculos 18 e 19 e objetos litúrgicos, somando cerca de 320 peças expostas no primeiro pavimento do palácio episcopal e no corpo da igreja.</item>
+        <item>spaço São José Liberto ou Polo Joalheiro é um espaço localizado em Belém do Pará que foi concebido para abrigar setores criativos e categorias culturais, como patrimônio, expressões culturais, artes de espetáculo, criações culturais e funcionais.</item>
+        <item>O Memorial dos Povos é, na verdade, um memorial do povo de Belém, que é síntese do cruzamento étnico de vários povos que contribuiram para a história da cidade: Portugueses, Esapnhóis, Africanos, Índios, Árabes, Libaneses, Italianos, Japoneses.</item>
+        <item>A Corveta Solimões, construída por um estaleiro holandês em 1954, foi entregue à Marinha Brasileira em 1955. Esteve subordinada ao Comando do 4º Distrito Naval até 2004. Neste mesmo ano, através de convenio Secretaria de Cultura/Marinha do Brasil, iniciou-se o processo de adaptação da Corveta em navio-museu. O circuito expositivo rememora a trajetória da própria embarcação nas águas brasileiras e o cotidiano de sua tripulação.</item>
+        <item>Fundada em 1616, a cidade de Belém tem no Forte do Presépio a sua primeira construção. Após os vários usos militares da fortificação e das modificações arquitetônicas que sofreu, o Forte foi revitalizado para uso museológico em 2002. Os circuitos expositivos são: o “Sítio Histórico da Fundação de Belém”, composto pela própria edificação com seus vestígios arquitetônicos e artilharia militar; e o “Museu do Encontro”, que versa sobre o processo de colonização portuguesa na Amazônia em três momentos – pré-contato, contato e resultado do contato. O acervo inclui artefatos líticos e cerâmicos pré-históricos, além da cultura material proveniente das escavações no próprio sítio histórico e seu entorno, bem como artefatos e iconografias de grupos indígenas contemporâneos.</item>
+        <item>Inaugurado em 2002, é um espaço dedicado à arte contemporânea brasileira. Possui várias coleções de arte moderna, contemporânea e fotografia de artistas locais e nacionais, com destaque para o circuito expositivo de fotografias Panorama 80/90. O prédio, construído no século XVIII, foi residência do senhor de engenho Domingos da Costa Bacelar, e posteriormente foi adaptado pelo arquiteto Antonio Landi, para ser Hospital Real Militar.</item>
+        <item>O Museu de Arte de Belém (MABE) é um museu público municipal localizado na cidade de Belém, capital do estado do Pará, Brasil. Fundado em 1991, é subordinado à Fundação Cultural do Município de Belém. Sua sede é o Palácio Antônio Lemos, edificação em estilo neoclássico erguido na segunda metade do século XIX para ser sede da Intendência Municipa</item>
+    </string-array>
+
+</resources>
