@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import br.com.juliorgm.paratourguideapp.Adapter;
 import br.com.juliorgm.paratourguideapp.R;
 import br.com.juliorgm.paratourguideapp.models.Locais;
@@ -19,8 +22,9 @@ public class MaisVisitadosFragment extends Fragment {
     private RecyclerView mRecyclerLocais;
     private ArrayList<Locais> mListaLocais;
     private Resources mResourse;
-    private String [] mTitulo,mDescricao;
-    private int[] mIdImagem;
+    private List<String> mTitulo;
+    private List<String> mDescricao;
+    private List<Integer> mIdImagem;
 
     public MaisVisitadosFragment(){}
 
@@ -40,32 +44,33 @@ public class MaisVisitadosFragment extends Fragment {
     public void geraLista(){
         mListaLocais = new ArrayList<>();
         carregaRecursos();
-        addListaPrincipais();
+        addLista();
     }
 
-    public void addListaPrincipais(){
-        for (int i = 0; i < mTitulo.length; i++) {
-            mListaLocais.add(new Locais(mTitulo[i],mDescricao[i],mIdImagem[i]));
+    public void addLista(){
+        for (int i = 0; i < mTitulo.size(); i++) {
+            mListaLocais.add(new Locais(mTitulo.get(i),mDescricao.get(i),mIdImagem.get(i)));
         }
     }
 
     public void carregaRecursos(){
         mResourse = getResources();
-        mTitulo = mResourse.getStringArray(R.array.principais_titulo);
-        mDescricao = mResourse.getStringArray(R.array.principais_descricao);
+        mTitulo = Arrays.asList(mResourse.getStringArray(R.array.principais_titulo));
+        mDescricao = Arrays.asList(mResourse.getStringArray(R.array.principais_descricao));
         mIdImagem = imgs();
     }
 
-    public int[] imgs(){
-        int [] img = new int[]{
-                R.drawable.principais1,
-                R.drawable.principais2,
-                R.drawable.principais3,
-                R.drawable.principais4,
-                R.drawable.principais5,
-                R.drawable.principais6,
-                R.drawable.principais7
-        } ;
-        return img;
+    public ArrayList<Integer> imgs(){
+
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(R.drawable.principais1);
+        lista.add(R.drawable.principais2);
+        lista.add(R.drawable.principais3);
+        lista.add(R.drawable.principais4);
+        lista.add(R.drawable.principais5);
+        lista.add(R.drawable.principais6);
+        lista.add(R.drawable.principais7);
+
+        return lista;
     }
 }

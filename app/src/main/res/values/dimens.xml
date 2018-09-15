@@ -8,4 +8,7 @@
     <dimen name="descricao">16sp</dimen>
     <dimen name="paddin_padrao">8dp</dimen>
     <dimen name="margem_padrao">8dp</dimen>
+    <dimen name="margem_maxima" />
+    <dimen name="largura_img">220dp</dimen>
+    <dimen name="altura_img">150dp</dimen>
 </resources>

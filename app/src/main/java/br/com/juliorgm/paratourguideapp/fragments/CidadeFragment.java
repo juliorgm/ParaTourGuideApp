@@ -1,6 +1,5 @@
 package br.com.juliorgm.paratourguideapp.fragments;
 
-
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,9 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import java.util.ArrayList;
-
+import java.util.Arrays;
+import java.util.List;
 import br.com.juliorgm.paratourguideapp.Adapter;
 import br.com.juliorgm.paratourguideapp.R;
 import br.com.juliorgm.paratourguideapp.models.Locais;
@@ -22,13 +21,11 @@ public class CidadeFragment extends Fragment {
     private RecyclerView mRecyclerLocais;
     private ArrayList<Locais> mListaLocais;
     private Resources mResourse;
-    private String [] mTitulo,mDescricao;
-    private int[] mIdImagem;
+    private List<String> mTitulo;
+    private List<String> mDescricao;
+    private List<Integer> mIdImagem;
 
-    public CidadeFragment() {
-        // Required empty public constructor
-    }
-
+    public CidadeFragment() {}
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,29 +44,30 @@ public class CidadeFragment extends Fragment {
     public void geraLista(){
         mListaLocais = new ArrayList<>();
         carregaRecursos();
-        addListaCultura();
+        addLista();
     }
 
-    public void addListaCultura(){
-        for (int i = 0; i < mTitulo.length; i++) {
-            mListaLocais.add(new Locais(mTitulo[i],mDescricao[i],mIdImagem[i]));
+    public void addLista(){
+        for (int i = 0; i < mTitulo.size(); i++) {
+            mListaLocais.add(new Locais(mTitulo.get(i),mDescricao.get(i),mIdImagem.get(i)));
         }
     }
 
     public void carregaRecursos(){
         mResourse = getResources();
-        mTitulo = mResourse.getStringArray(R.array.cidade_titulo);
-        mDescricao = mResourse.getStringArray(R.array.cidade_descricao);
+        mTitulo = Arrays.asList(mResourse.getStringArray(R.array.cidade_titulo));
+        mDescricao = Arrays.asList(mResourse.getStringArray(R.array.cidade_descricao));
         mIdImagem = imgs();
     }
 
-    public int[] imgs(){
-        return new int[]{
-                R.drawable.cidade1,
-                R.drawable.cidade2,
-                R.drawable.cidade3,
-                R.drawable.cidade4,
-                R.drawable.cidade5
-        };
+    public ArrayList<Integer> imgs(){
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(R.drawable.cidade1);
+        lista.add(R.drawable.cidade2);
+        lista.add(R.drawable.cidade3);
+        lista.add(R.drawable.cidade4);
+        lista.add(R.drawable.cidade5);
+
+        return lista;
     }
 }

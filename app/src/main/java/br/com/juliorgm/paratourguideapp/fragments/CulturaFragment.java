@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import br.com.juliorgm.paratourguideapp.Adapter;
 import br.com.juliorgm.paratourguideapp.R;
 import br.com.juliorgm.paratourguideapp.models.Locais;
@@ -19,8 +22,9 @@ public class CulturaFragment extends Fragment {
     private RecyclerView mRecyclerLocais;
     private ArrayList<Locais> mListaLocais;
     private Resources mResourse;
-    private String [] mTitulo,mDescricao;
-    private int[] mIdImagem;
+    private List<String> mTitulo;
+    private List<String> mDescricao;
+    private List<Integer> mIdImagem;
 
     public CulturaFragment() {}
 
@@ -28,7 +32,7 @@ public class CulturaFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_cultura, container, false);
-        geraListaCultura();
+        geraLista();
 
         mRecyclerLocais = view.findViewById(R.id.recyclerCultura);
         mRecyclerLocais.setHasFixedSize(true);
@@ -39,34 +43,37 @@ public class CulturaFragment extends Fragment {
         return view;
     }
 
-    public void geraListaCultura(){
+    public void geraLista(){
         mListaLocais = new ArrayList<>();
         carregaRecursos();
-        addListaCultura();
+        addLista();
     }
 
-    public void addListaCultura(){
-        for (int i = 0; i < mTitulo.length; i++) {
-            mListaLocais.add(new Locais(mTitulo[i],mDescricao[i],mIdImagem[i]));
+    public void addLista(){
+        for (int i = 0; i < mTitulo.size(); i++) {
+            mListaLocais.add(new Locais(mTitulo.get(i),mDescricao.get(i),mIdImagem.get(i)));
         }
     }
 
+
     public void carregaRecursos(){
         mResourse = getResources();
-        mTitulo = mResourse.getStringArray(R.array.cultura_titulo);
-        mDescricao = mResourse.getStringArray(R.array.cultura_descricao);
+        mTitulo = Arrays.asList(mResourse.getStringArray(R.array.cultura_titulo));
+        mDescricao = Arrays.asList(mResourse.getStringArray(R.array.cultura_descricao));
         mIdImagem = imgs();
     }
 
-    public int[] imgs(){
-        return new int[]{
-           R.drawable.cultura1,
-           R.drawable.cultura2,
-           R.drawable.cultura3,
-           R.drawable.cultura4,
-           R.drawable.cultura5,
-           R.drawable.cultura6,
-           R.drawable.cultura7
-        };
+    public ArrayList<Integer> imgs(){
+
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(R.drawable.cultura1);
+        lista.add(R.drawable.cultura2);
+        lista.add(R.drawable.cultura3);
+        lista.add(R.drawable.cultura4);
+        lista.add(R.drawable.cultura5);
+        lista.add(R.drawable.cultura6);
+        lista.add(R.drawable.cultura7);
+
+        return lista;
     }
 }
