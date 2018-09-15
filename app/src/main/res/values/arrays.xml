@@ -18,5 +18,55 @@
         <item>Inaugurado em 2002, é um espaço dedicado à arte contemporânea brasileira. Possui várias coleções de arte moderna, contemporânea e fotografia de artistas locais e nacionais, com destaque para o circuito expositivo de fotografias Panorama 80/90. O prédio, construído no século XVIII, foi residência do senhor de engenho Domingos da Costa Bacelar, e posteriormente foi adaptado pelo arquiteto Antonio Landi, para ser Hospital Real Militar.</item>
         <item>O Museu de Arte de Belém (MABE) é um museu público municipal localizado na cidade de Belém, capital do estado do Pará, Brasil. Fundado em 1991, é subordinado à Fundação Cultural do Município de Belém. Sua sede é o Palácio Antônio Lemos, edificação em estilo neoclássico erguido na segunda metade do século XIX para ser sede da Intendência Municipa</item>
     </string-array>
+    <string-array name="principais_titulo">
+        <item>Basílica de Nossa Senhora de Nazaré</item>
+        <item>Teatro da Paz</item>
+        <item>Ver-o-Peso</item>
+        <item>Floresta Nacional dos Tapajós</item>
+        <item>Estação das Docas</item>
+        <item>Mangal das Garças</item>
+        <item>Parque da Residência</item>
+    </string-array>
+    <string-array name="principais_descricao">
+        <item>A Basílica Santuário Nossa Senhora de Nazaré começou a ser erguida em 1909, no lugar onde foi encontrado a imagem de Nossa Senhora de Nazaré por Plácido José de Souza na cidade de Belém, no estado do Pará, às margens do Igarapé Murututu.</item>
+        <item>O Theatro da Paz, nome dado pelo Bispo da época Dom Macedo Costa, em homenagem ao fim da guerra do Paraguai, porém sua nomenclatura foi modificada a pedido do próprio Bispo,[1] ao ver que o nome de "Nossa Senhora" seria indigno figurar na cidade um espaço onde se tinha apresentações mundanas e sem representação eclesiástica alguma, localiza-se na cidade de Belém, no estado do Pará, no Brasil, construído com recursos auferidos da exportação de látex, no Ciclo da Borracha</item>
+        <item>O Mercado Ver-o-Peso ou Mercado Municipal Bolonha de Peixe ou Mercado de Ferro ou somente Ver-o-Peso (inicialmente chamado Casa de Haver o Peso), é um mercado público inaugurada em 1625, pertencente ao Complexo do Ver-o-Peso, situado na cidade brasileira de Belém, no estado do Pará, localizado na Avenida Boulevard Castilhos França, no bairro da Campina, às margens da baía do Guajará.</item>
+        <item>Floresta Nacional do Tapajós é uma unidade de conservação federal na categoria floresta nacional, no estado do Pará (Brasil), que mais abriga pesquisa científica no país. Tem área de 549.066,87 e mais de 160 quilômetros de praias. A unidade apresenta grande diversidade de paisagens: rios, lagos, alagados, terra firme, morros, planaltos, floresta, campos, açaizais, etc</item>
+        <item>A Estação das Docas é um complexo turístico e cultural da cidade de Belém no estado brasileiro do Pará, inaugurado em 13 de maio de 2000. Sendo anteriormente parte do Porto de Belém.</item>
+        <item>O Mangal das Garças, inaugurado em 12 de janeiro de 2005, está localizado às margens do rio Guamá, em pleno centro histórico de Belém do Pará, no entorno do Arsenal da Marinha. O parque ecológico é resultado da revitalização de uma área de 40.000 m², uma síntese do ambiente amazônico no coração da capital paraense</item>
+        <item>O Parque da Residência localiza-se na cidade de Belém, no estado do Pará, no Brasil. Residência oficial dos governadores do estado a partir de 1934, teve como primeiro morador Magalhães Barata. Mas o prédio já havia sido lar dos governadores Enéas Martins e Lauro Sodré</item>
 
+    </string-array>
+    <string-array name="natureza_titulo">
+        <item>Ilha de Algodoal</item>
+        <item>Praia do Cururu (Alter do Chão)</item>
+        <item>Praia ilha do amor ( Alter do Chão)</item>
+        <item>Praia do Pesqueiro(Soure)</item>
+        <item>Praia do Farol Velho (Salinópolis)</item>
+        <item>Praia da Fortaleza (Pirabas)</item>
+        <item>Praia do Paraíso (Mosqueiro)</item>
+    </string-array>
+    <string-array name="natureza_descricao">
+        <item>Ilha de Maiandeua é uma ilha brasileira localizada no município de Maracanã no estado do Pará. Popularmente conhecida como ilha de Algodoal.[</item>
+        <item>A praia denominada Ponta do Cururu, nome esse derivado por causa de uma enorme formação rochosa esculpida naturalmente em forma de um grande sapo. A Ponta do Cururu localiza-se próximo à Vila de Alter do Chão, na cidade de Santarém. Surge em um curto período de no máximo 3 meses, tempo suficiente para apreciar  toda sua beleza e esplendor  fazendo um grande encantamento em seus visitantes. </item>
+        <item>Praia, rio, artesanato e ecoturismo Esta praia possui águas azuis, um banco de areia surge entre os meses de  agosto e dezembro, fica perto ao centro, e é uma praia muito agradável.</item>
+        <item>Esta praia possui água doce e morna, a areia é branca. Tem uma boa infraestrutura. Existe palhoças na praia com cadeira e também redes.</item>
+        <item>Esta praia possui um ambiente tranquilo e familiar. O mar  está sempre calmo e com temperatura agradável. Possui boa infraestrutura. Atrativo a parte é o lindo por do sol.</item>
+        <item>A Ilha da Fortaleza é um pedaço de paraíso ainda preservado na terra. Você vai adorar ter uma ilha inteira, deserta e paradisíaca com belas paisagens para o rio e para o mar. Excelente para quem busca o contato direto entre o homem e natureza.</item>
+        <item>Praia, surf, chalé, pesca e ecoturismo Esta praia possui mar calmo, com areia que vai de marrom claro para marrom escuro. Possui uma boa infraestrutura. Um verdadeiro paraíso.</item>
+    </string-array>
+    <string-array name="cidade_titulo">
+        <item>Belém</item>
+        <item>Bragança</item>
+        <item>Soure</item>
+        <item>Santarém</item>
+        <item>Óbidos</item>
+    </string-array>
+    <string-array name="cidade_descricao">
+        <item>Capital do estado do Pará, situado na região Norte do país. A cidade foi fundada em 12 de janeiro de 1616, desenvolvendo-se às margens da baía Guajará. É uma cidade histórica e portuária, localizada ao extremo nordeste da maior floresta tropical do mundo, sendo a capital mais chuvosa do Brasil devido a seu clima equatorial.</item>
+        <item>Município brasileiro do estado do Pará. Sua população estimada em 2017 era de 125.184 habitantes. Franceses liderados por Daniel de La Touche, senhor de La Lavandière, foram os primeiros europeus a conhecer a região do Caeté, tendo saído de São Luis em 8 de julho de 1613 com destino à região do Turiaçu, Gurupi e Caeté.</item>
+        <item>Soure é um município brasileiro do estado do Pará, sua população estimada em 2016 era de 24.488 habitantes, segundo o IBGE. Está localizada a 80km da capital paraense, Belém.</item>
+        <item>Santarém (IPA: [sɐ̃taˈɾẽj]) é um município brasileiro do estado do Pará, sendo o terceiro mais populoso do estado, atrás somente da capital, Belém e de Ananindeua, e o principal centro urbano, financeiro, comercial e cultural do oeste do estado.</item>
+        <item>Município brasileiro do estado do Pará. Erguida na margem esquerda do Rio Amazonas, em um trecho onde as margens daquele rio tornam-se mais estreitas e o seu canal mais profundo, formando, como se diz na região, a "garganta do rio Amazonas". Nesse ponto a largura do rio é de cerca de 1.890 metros.</item>
+    </string-array>
 </resources>

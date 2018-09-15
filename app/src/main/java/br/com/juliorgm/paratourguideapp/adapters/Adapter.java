@@ -16,11 +16,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private Context mContext;
     private ArrayList<Locais> mLocais;
 
-    public Adapter(Context mContext, ArrayList<Locais> mLocais) {
-        this.mContext = mContext;
-        this.mLocais = mLocais;
-    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,7 +41,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         private TextView mTitulo, mDescricao;
         private ImageView mImagem;
-        public ViewHolder(View itemView) {
+        private ViewHolder(View itemView) {
             super(itemView);
 
             mTitulo = itemView.findViewById(R.id.txtTitulo);

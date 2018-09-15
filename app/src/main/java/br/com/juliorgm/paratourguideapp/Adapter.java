@@ -8,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 import br.com.juliorgm.paratourguideapp.models.Locais;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
@@ -45,10 +43,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView mTitulo, mDescricao;
-        public ImageView mImagem;
+        private TextView mTitulo, mDescricao;
+        private ImageView mImagem;
 
-        public ViewHolder(View itemView) {
+        private ViewHolder(View itemView) {
             super(itemView);
             mTitulo = itemView.findViewById(R.id.txtTitulo);
             mDescricao = itemView.findViewById(R.id.txtDescricao);

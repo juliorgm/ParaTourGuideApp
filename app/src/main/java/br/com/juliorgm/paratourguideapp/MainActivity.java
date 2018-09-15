@@ -10,6 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.juliorgm.paratourguideapp.fragments.CidadeFragment;
 import br.com.juliorgm.paratourguideapp.fragments.CulturaFragment;
 import br.com.juliorgm.paratourguideapp.fragments.MaisVisitadosFragment;
 import br.com.juliorgm.paratourguideapp.fragments.NaturezaFragment;
@@ -24,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = findViewById(R.id.container);
         setupViewPager(mViewPager);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-
+        TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
     }
 
     private void setupViewPager (ViewPager viewPager){
         mSectionsPagerAdapter = new SectionsPageAdapter(getSupportFragmentManager());
+        mSectionsPagerAdapter.addFragment(new CidadeFragment(),getApplicationContext().getString(R.string.tab_cidade));
         mSectionsPagerAdapter.addFragment(new MaisVisitadosFragment(),getApplicationContext().getString(R.string.tab_mais_visitados));
         mSectionsPagerAdapter.addFragment(new CulturaFragment(),getApplicationContext().getString(R.string.tab_cultura));
         mSectionsPagerAdapter.addFragment(new NaturezaFragment(),getApplicationContext().getString(R.string.tab_natureza));
@@ -45,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
         private final List<Fragment> listaFragment = new ArrayList<>();
         private final List<String> listaTituloFragment = new ArrayList<>();
 
-        public void addFragment(Fragment fragment, String title){
+        private void addFragment(Fragment fragment, String title){
             listaFragment.add(fragment);
             listaTituloFragment.add(title);
         }
 
-        public SectionsPageAdapter(FragmentManager fm) {
+        private SectionsPageAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -70,7 +72,4 @@ public class MainActivity extends AppCompatActivity {
             return listaFragment.size();
         }
     }
-
-
-
 }
